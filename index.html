@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funkmc</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#090909;
+color:white;
+overflow-x:hidden;
+}
+
+#particles-js{
+position:fixed;
+width:100%;
+height:100%;
+z-index:-1;
+background:linear-gradient(160deg,#000,#120019,#220033,#000);
+}
+
+header{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+}
+
+h1{
+
+font-size:90px;
+color:#b100ff;
+
+text-shadow:
+0 0 10px #b100ff,
+0 0 20px #b100ff,
+0 0 40px #b100ff,
+0 0 80px #b100ff;
+
+animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+
+from{
+
+text-shadow:
+0 0 10px #b100ff,
+0 0 20px #b100ff;
+
+}
+
+to{
+
+text-shadow:
+0 0 20px #d54dff,
+0 0 50px #d54dff,
+0 0 90px #d54dff;
+
+}
+
+}
+
+.subtitle{
+
+margin-top:20px;
+font-size:22px;
+color:#ddd;
+
+}
+
+.discord{
+
+margin-top:40px;
+padding:18px 45px;
+border-radius:50px;
+background:#8d00ff;
+color:white;
+text-decoration:none;
+font-size:20px;
+font-weight:bold;
+transition:.3s;
+box-shadow:0 0 25px #8d00ff;
+
+}
+
+.discord:hover{
+
+transform:scale(1.08);
+
+box-shadow:
+0 0 20px #b100ff,
+0 0 40px #b100ff,
+0 0 70px #b100ff;
+
+}
+
+section{
+
+padding:80px 10%;
+}
+
+.section-title{
+
+font-size:45px;
+text-align:center;
+margin-bottom:50px;
+color:#bb00ff;
+
+}
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.08);
+padding:25px;
+border-radius:20px;
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:
+0 0 20px #8d00ff;
+
+}
+
+.card h3{
+
+color:#c75fff;
+margin-bottom:20px;
+
+}
+
+.card p{
+
+margin:8px 0;
+
+}
+
+.about,.contact{
+
+max-width:900px;
+margin:auto;
+text-align:center;
+font-size:20px;
+line-height:1.8;
+
+}
+
+footer{
+
+padding:40px;
+text-align:center;
+background:#050505;
+
+}
+
+footer a{
+
+color:#b100ff;
+font-size:35px;
+margin:15px;
+transition:.3s;
+
+}
+
+footer a:hover{
+
+color:white;
+text-shadow:0 0 20px #b100ff;
+
+}
+
+.counter{
+
+margin-top:25px;
+font-size:24px;
+color:#d38cff;
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<header>
+
+<h1>Funkmc</h1>
+
+<p class="subtitle">
+Najlepszy serwer Minecraft 💜
+</p>
+
+<a class="discord"
+href="https://discord.gg/67CufwTSpX"
+target="_blank">
+
+Dołącz na Discord
+
+</a>
+
+<div class="counter">
+    👥 Członków Discord: <b>185</b>
+</div>
+
+</header>
+
+<section>
+
+<h2 class="section-title">
+💎 Cennik
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Rangi</h3>
+
+<p>💜 Funk — 50 zł</p>
+<p>⭐ Fvip — 20 zł</p>
+<p>✨ Svip — 10 zł</p>
+<p>👑 Vip — 5 zł</p>
+
+</div>
+
+<div class="card">
+
+<h3>Klucze</h3>
+
+<p>💎 Funk — 5 zł</p>
+<p>🟣 Epicki — 3 zł</p>
+<p>🔮 Rzadki — 2 zł</p>
+
+</div>
+
+<div class="card">
+
+<h3>Pakiety</h3>
+
+<p>💰 Bogacza — 100 zł</p>
+<p>💜 Funk — 60 zł</p>
+<p>⭐ Fvip — 50 zł</p>
+<p>✨ Svip — 30 zł</p>
+<p>👑 Vip — 20 zł</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+📦 Co zawierają pakiety?
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>💰 Pakiet Bogacza</h3>
+
+<p>✔ Ranga <b>Funk</b></p>
+<p>✔ 5× Kluczy Funk</p>
+<p>✔ 10× Kluczy Epickich</p>
+<p>✔ 15× Kluczy Rzadkich</p>
+
+</div>
+
+<div class="card">
+
+<h3>💜 Pakiet Funk</h3>
+
+<p>✔ Ranga <b>Funk</b></p>
+<p>✔ 3× Kluczy Funk</p>
+<p>✔ 10× Kluczy Epickich</p>
+
+</div>
+
+<div class="card">
+
+<h3>⭐ Pakiet Fvip</h3>
+
+<p>✔ Ranga <b>Fvip</b></p>
+<p>✔ 3× Kluczy Funk</p>
+<p>✔ 5× Kluczy Epickich</p>
+
+</div>
+
+<div class="card">
+
+<h3>✨ Pakiet Svip</h3>
+
+<p>✔ Ranga <b>Svip</b></p>
+<p>✔ 1× Klucz Funk</p>
+<p>✔ 3× Kluczy Epickich</p>
+<p>✔ 5× Kluczy Rzadkich</p>
+
+</div>
+
+<div class="card">
+
+<h3>👑 Pakiet Vip</h3>
+
+<p>✔ Ranga <b>Vip</b></p>
+<p>✔ 3× Kluczy Epickich</p>
+<p>✔ 5× Kluczy Rzadkich</p>
+
+</div>
+
+</div>
+
+</section>
+
+<h2 class="section-title">
+
+👥 O nas
+
+</h2>
+
+<div class="about">
+
+Funkmc to nowoczesny serwer Minecraft tworzony z pasją.
+Regularne aktualizacje, świetna społeczność i wyjątkowa rozgrywka.
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+
+📞 Kontakt
+
+</h2>
+
+<div class="contact">
+
+Discord to najlepszy sposób kontaktu z administracją.
+
+</div>
+
+</section>
+
+<footer>
+
+<a href="https://discord.gg/67CufwTSpX" target="_blank">
+<i class="fab fa-discord"></i>
+</a>
+
+<a href="https://youtube.com/@pozdro_yt?si=mqkqtXgp1AH8Adyj" target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
+
+<a href="https://www.tiktok.com/@pozdro_yt5?is_from_webapp=1&sender_device=pc" target="_blank">
+<i class="fab fa-tiktok"></i>
+</a>
+
+</footer>
+
+<script>
+
+particlesJS("particles-js",{
+
+particles:{
+
+number:{
+value:90
+},
+
+color:{
+value:"#b100ff"
+},
+
+shape:{
+type:"circle"
+},
+
+opacity:{
+value:0.5
+},
+
+size:{
+value:3
+},
+
+move:{
+enable:true,
+speed:2
+},
+
+line_linked:{
+enable:true,
+distance:150,
+color:"#8d00ff",
+opacity:0.3
+}
+
+}
+
+});
+
+fetch("https://discord.com/api/guilds/1365079416965415022/widget.json")
+.then(res=>res.json())
+.then(data=>{
+
+document.getElementById("members").innerHTML=data.presence_count+" Online";
+
+})
+.catch(()=>{
+
+document.getElementById("members").innerHTML="Niedostępne";
+
+});
+
+</script>
+
+</body>
+</html>
