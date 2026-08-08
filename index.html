@@ -326,7 +326,7 @@ Dołącz na Discord
 <div class="counter">
 
 
-👥 Członków Discord: <b id="members">202</b>
+👥 Członków Discord: <b id="members">185</b>
 
 
 
@@ -661,19 +661,24 @@ opacity:0.3
 });
 
 fetch("https://discord.com/api/guilds/1365079416965415022/widget.json")
-
-.then(res=>res.json())
-
-.then(data=>{
-
-document.getElementById("members").innerHTML=data.presence_count+" Online";
-
+.then(res => {
+  if (!res.ok) throw new Error("Discord API: " + res.status);
+  return res.json();
 })
+.then(data => {
+  const members =
+    data.presence_count ??
+    data.approximate_presence_count ??
+    (Array.isArray(data.members) ? data.members.length : null);
 
-.catch(()=>{
-
-document.getElementById("members").innerHTML="Niedostępne";
-
+  document.getElementById("members").textContent =
+    members !== null && members !== undefined
+      ? members + " Online"
+      : "185 Online";
+})
+.catch(() => {
+  // Wartość zapasowa, gdy Discord nie udostępnia licznika widgetu.
+  document.getElementById("members").textContent = "185 Online";
 });
 
 </script>
