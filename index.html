@@ -1,11 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="pl">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Funkmc</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -15,48 +21,77 @@
 <style>
 
 *{
+
 margin:0;
+
 padding:0;
+
 box-sizing:border-box;
+
 font-family:'Poppins',sans-serif;
+
 scroll-behavior:smooth;
+
 }
 
 body{
+
 background:#090909;
+
 color:white;
+
 overflow-x:hidden;
+
 }
 
 #particles-js{
+
 position:fixed;
+
 width:100%;
+
 height:100%;
+
 z-index:-1;
+
 background:linear-gradient(160deg,#000,#120019,#220033,#000);
+
 }
 
 header{
+
 height:100vh;
+
 display:flex;
+
 justify-content:center;
+
 align-items:center;
+
 flex-direction:column;
+
 text-align:center;
+
 }
 
 h1{
 
 font-size:90px;
+
 color:#b100ff;
 
 text-shadow:
+
 0 0 10px #b100ff,
+
 0 0 20px #b100ff,
+
 0 0 40px #b100ff,
+
 0 0 80px #b100ff;
 
 animation:glow 2s infinite alternate;
+
 }
 
 @keyframes glow{
@@ -64,7 +99,9 @@ animation:glow 2s infinite alternate;
 from{
 
 text-shadow:
+
 0 0 10px #b100ff,
+
 0 0 20px #b100ff;
 
 }
@@ -72,8 +109,11 @@ text-shadow:
 to{
 
 text-shadow:
+
 0 0 20px #d54dff,
+
 0 0 50px #d54dff,
+
 0 0 90px #d54dff;
 
 }
@@ -83,7 +123,9 @@ text-shadow:
 .subtitle{
 
 margin-top:20px;
+
 font-size:22px;
+
 color:#ddd;
 
 }
@@ -91,14 +133,23 @@ color:#ddd;
 .discord{
 
 margin-top:40px;
+
 padding:18px 45px;
+
 border-radius:50px;
+
 background:#8d00ff;
+
 color:white;
+
 text-decoration:none;
+
 font-size:20px;
+
 font-weight:bold;
+
 transition:.3s;
+
 box-shadow:0 0 25px #8d00ff;
 
 }
@@ -108,8 +159,11 @@ box-shadow:0 0 25px #8d00ff;
 transform:scale(1.08);
 
 box-shadow:
+
 0 0 20px #b100ff,
+
 0 0 40px #b100ff,
+
 0 0 70px #b100ff;
 
 }
@@ -117,13 +171,17 @@ box-shadow:
 section{
 
 padding:80px 10%;
+
 }
 
 .section-title{
 
 font-size:45px;
+
 text-align:center;
+
 margin-bottom:50px;
+
 color:#bb00ff;
 
 }
@@ -131,7 +189,9 @@ color:#bb00ff;
 .cards{
 
 display:grid;
+
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
 gap:25px;
 
 }
@@ -139,9 +199,13 @@ gap:25px;
 .card{
 
 background:rgba(255,255,255,.05);
+
 border:1px solid rgba(255,255,255,.08);
+
 padding:25px;
+
 border-radius:20px;
+
 transition:.4s;
 
 }
@@ -151,6 +215,7 @@ transition:.4s;
 transform:translateY(-10px);
 
 box-shadow:
+
 0 0 20px #8d00ff;
 
 }
@@ -158,6 +223,7 @@ box-shadow:
 .card h3{
 
 color:#c75fff;
+
 margin-bottom:20px;
 
 }
@@ -171,9 +237,13 @@ margin:8px 0;
 .about,.contact{
 
 max-width:900px;
+
 margin:auto;
+
 text-align:center;
+
 font-size:20px;
+
 line-height:1.8;
 
 }
@@ -181,7 +251,9 @@ line-height:1.8;
 footer{
 
 padding:40px;
+
 text-align:center;
+
 background:#050505;
 
 }
@@ -189,8 +261,11 @@ background:#050505;
 footer a{
 
 color:#b100ff;
+
 font-size:35px;
+
 margin:15px;
+
 transition:.3s;
 
 }
@@ -198,6 +273,7 @@ transition:.3s;
 footer a:hover{
 
 color:white;
+
 text-shadow:0 0 20px #b100ff;
 
 }
@@ -205,14 +281,24 @@ text-shadow:0 0 20px #b100ff;
 .counter{
 
 margin-top:25px;
+
 font-size:24px;
+
 color:#d38cff;
 
 }
 
+
+.rules{text-align:left;font-size:16px}
+.rules h3{color:#c75fff;margin:28px 0 12px;font-size:24px}
+.rules ol{padding-left:28px}
+.rules li{margin:9px 0;line-height:1.7}
+.rules p{margin:12px 0}
+@media(max-width:600px){h1{font-size:56px}.subtitle{font-size:18px}section{padding:60px 6%}.section-title{font-size:34px}}
 </style>
 
 </head>
+
 <body>
 
 <div id="particles-js"></div>
@@ -222,11 +308,15 @@ color:#d38cff;
 <h1>Funkmc</h1>
 
 <p class="subtitle">
+
 Najlepszy serwer Minecraft 💜
+
 </p>
 
 <a class="discord"
+
 href="https://discord.gg/67CufwTSpX"
+
 target="_blank">
 
 Dołącz na Discord
@@ -234,7 +324,12 @@ Dołącz na Discord
 </a>
 
 <div class="counter">
-    👥 Członków Discord: <b>185</b>
+
+
+👥 Członków Discord: <b id="members">185</b>
+
+
+
 </div>
 
 </header>
@@ -242,7 +337,9 @@ Dołącz na Discord
 <section>
 
 <h2 class="section-title">
+
 💎 Cennik
+
 </h2>
 
 <div class="cards">
@@ -252,8 +349,11 @@ Dołącz na Discord
 <h3>Rangi</h3>
 
 <p>💜 Funk — 50 zł</p>
+
 <p>⭐ Fvip — 20 zł</p>
+
 <p>✨ Svip — 10 zł</p>
+
 <p>👑 Vip — 5 zł</p>
 
 </div>
@@ -263,7 +363,9 @@ Dołącz na Discord
 <h3>Klucze</h3>
 
 <p>💎 Funk — 5 zł</p>
+
 <p>🟣 Epicki — 3 zł</p>
+
 <p>🔮 Rzadki — 2 zł</p>
 
 </div>
@@ -273,9 +375,13 @@ Dołącz na Discord
 <h3>Pakiety</h3>
 
 <p>💰 Bogacza — 100 zł</p>
+
 <p>💜 Funk — 60 zł</p>
+
 <p>⭐ Fvip — 50 zł</p>
+
 <p>✨ Svip — 30 zł</p>
+
 <p>👑 Vip — 20 zł</p>
 
 </div>
@@ -287,7 +393,9 @@ Dołącz na Discord
 <section>
 
 <h2 class="section-title">
+
 📦 Co zawierają pakiety?
+
 </h2>
 
 <div class="cards">
@@ -297,8 +405,11 @@ Dołącz na Discord
 <h3>💰 Pakiet Bogacza</h3>
 
 <p>✔ Ranga <b>Funk</b></p>
+
 <p>✔ 5× Kluczy Funk</p>
+
 <p>✔ 10× Kluczy Epickich</p>
+
 <p>✔ 15× Kluczy Rzadkich</p>
 
 </div>
@@ -308,7 +419,9 @@ Dołącz na Discord
 <h3>💜 Pakiet Funk</h3>
 
 <p>✔ Ranga <b>Funk</b></p>
+
 <p>✔ 3× Kluczy Funk</p>
+
 <p>✔ 10× Kluczy Epickich</p>
 
 </div>
@@ -318,7 +431,9 @@ Dołącz na Discord
 <h3>⭐ Pakiet Fvip</h3>
 
 <p>✔ Ranga <b>Fvip</b></p>
+
 <p>✔ 3× Kluczy Funk</p>
+
 <p>✔ 5× Kluczy Epickich</p>
 
 </div>
@@ -328,8 +443,11 @@ Dołącz na Discord
 <h3>✨ Pakiet Svip</h3>
 
 <p>✔ Ranga <b>Svip</b></p>
+
 <p>✔ 1× Klucz Funk</p>
+
 <p>✔ 3× Kluczy Epickich</p>
+
 <p>✔ 5× Kluczy Rzadkich</p>
 
 </div>
@@ -339,7 +457,9 @@ Dołącz na Discord
 <h3>👑 Pakiet Vip</h3>
 
 <p>✔ Ranga <b>Vip</b></p>
+
 <p>✔ 3× Kluczy Epickich</p>
+
 <p>✔ 5× Kluczy Rzadkich</p>
 
 </div>
@@ -347,6 +467,8 @@ Dołącz na Discord
 </div>
 
 </section>
+
+<section>
 
 <h2 class="section-title">
 
@@ -357,6 +479,7 @@ Dołącz na Discord
 <div class="about">
 
 Funkmc to nowoczesny serwer Minecraft tworzony z pasją.
+
 Regularne aktualizacje, świetna społeczność i wyjątkowa rozgrywka.
 
 </div>
@@ -379,18 +502,100 @@ Discord to najlepszy sposób kontaktu z administracją.
 
 </section>
 
+<section>
+<h2 class="section-title">📜 Regulamin Serwera Minecraft FunkMC</h2>
+<div class="about rules">
+<p><strong>Nieznajomość regulaminu nie zwalnia z obowiązku jego przestrzegania. Wchodząc na serwer, akceptujesz poniższy regulamin.</strong></p>
+<h3>💬 Zasady ogólne</h3>
+<ol>
+<li>Zakazuje się ustawiania obraźliwych, wulgarnych lub prowokacyjnych nicków oraz avatarów.</li>
+<li>Zakazuje się pisania obraźliwych, rasistowskich, dyskryminujących lub prowokacyjnych wiadomości.</li>
+<li>Zakazuje się wysyłania linków zawierających wirusy, malware, phishing lub treści dla dorosłych.</li>
+<li>Zakazuje się podszywania pod innych graczy, członków administracji lub inne osoby.</li>
+<li>Zakazuje się reklamowania innych serwerów Minecraft, Discord oraz innych serwisów, również poprzez wiadomości prywatne.</li>
+<li>Zakazuje się tworzenia oraz używania multikont bez zgody wyższej administracji.</li>
+<li>Zakazuje się spamowania, floodowania oraz celowego zaśmiecania czatu.</li>
+<li>Zakazuje się nadmiernego używania wielkich liter, znaków oraz innych sposobów utrudniających korzystanie z czatu.</li>
+<li>Zabrania się rozpowszechniania treści pornograficznych, drastycznych oraz innych nieodpowiednich dla społeczności serwera.</li>
+<li>Zakazuje się udostępniania lub rozpowszechniania cudzych danych osobowych i prywatnych, w tym adresów IP, bez zgody ich właściciela.</li>
+</ol>
+<h3>🎮 Rozgrywka</h3>
+<ol start="11">
+<li>Zakazuje się używania nielegalnych modyfikacji, cheatów, skryptów oraz innych programów dających przewagę nad innymi graczami.</li>
+<li>Zakazuje się wykorzystywania jakichkolwiek błędów, bugów lub exploitów serwera.</li>
+<li>Każdy znaleziony błąd serwera należy zgłosić administracji.</li>
+<li>Zakazuje się tworzenia nielegalnych trapów, w szczególności takich, z których gracz nie ma możliwości samodzielnego wyjścia.</li>
+<li>Zakazuje się celowego utrudniania rozgrywki innym graczom poprzez wykorzystywanie mechanik gry w sposób sprzeczny z zasadami serwera.</li>
+<li>Zakazuje się kradzieży przedmiotów, pieniędzy lub innych dóbr należących do innych graczy, jeśli odbywa się ona wbrew zasadom danego trybu.</li>
+<li>Zakazuje się celowego niszczenia budowli lub mienia innych graczy bez uzasadnienia wynikającego z zasad danego trybu.</li>
+<li>Zakazuje się wykorzystywania błędów w ekonomii serwera, duplikowania przedmiotów oraz innych sposobów zdobywania nieuczciwej przewagi.</li>
+<li>Zakazuje się współpracy z osobami korzystającymi z cheatów lub innych niedozwolonych modyfikacji w celu uzyskania przewagi.</li>
+<li>Zakazuje się celowego omijania kar nałożonych przez administrację, w tym korzystania z innych kont w celu uniknięcia bana lub mute'a.</li>
+</ol>
+<h3>🛡️ Administracja</h3>
+<ol start="21">
+<li>Decyzje administracji należy respektować. W przypadku niezgody na karę gracz może złożyć odwołanie w wyznaczonym miejscu.</li>
+<li>Zakazuje się obrażania, prowokowania, wyśmiewania oraz celowego utrudniania pracy administracji.</li>
+<li>Gracz ma obowiązek wykonywać polecenia administracji związane z przeprowadzanym sprawdzaniem lub wyjaśnianiem sytuacji, o ile są one zgodne z regulaminem.</li>
+<li>Administracja ma prawo ukarać gracza za działania szkodliwe dla serwera, nawet jeśli dana sytuacja nie została dosłownie opisana w regulaminie.</li>
+<li>Regulamin może zostać w każdej chwili zmieniony lub zaktualizowany. Gracze są zobowiązani do przestrzegania jego aktualnej wersji.</li>
+</ol>
+<p><strong>Życzymy miłej i uczciwej rozgrywki na serwerze FunkMC! 🎮</strong></p>
+</div>
+</section>
+<section>
+<h2 class="section-title">📜 Regulamin Serwera Discord FunkMC</h2>
+<div class="about rules">
+<p><strong>Nieznajomość regulaminu nie zwalnia z obowiązku jego przestrzegania.</strong><br>Dołączając oraz przebywając na serwerze, akceptujesz poniższy regulamin.</p>
+<h3>💬 §1. Zasady tekstowe</h3>
+<ol>
+<li>Zabrania się bezmyślnego spamowania oraz floodowania na wszystkich kanałach.</li>
+<li>Zabrania się używania obraźliwych nicków, avatarów oraz wysyłania obraźliwych lub wulgarnych wiadomości.</li>
+<li>Zabrania się wysyłania linków prowadzących do stron zawierających złośliwe oprogramowanie, wirusy, treści pornograficzne lub inne niebezpieczne treści.</li>
+<li>Zabrania się podszywania pod innych użytkowników, członków administracji oraz inne osoby.</li>
+<li>Zabrania się handlu jakimikolwiek przedmiotami, kontami, usługami lub innymi dobrami na terenie serwera.</li>
+<li>Zabrania się reklamowania innych serwerów Discord, stron, usług oraz projektów — zarówno na kanałach serwera, jak i w wiadomościach prywatnych (PW/DM).</li>
+<li>Zabrania się tworzenia oraz używania multikont w celu omijania kar lub zasad obowiązujących na serwerze.</li>
+<li>Decyzje administracji należy respektować. W przypadku wątpliwości dotyczących kary lub decyzji administracyjnej należy skontaktować się z administracją.</li>
+<li>Administracja zastrzega sobie prawo do zmiany regulaminu. Użytkownicy zostaną poinformowani o istotnych zmianach.</li>
+</ol>
+<h3>🎙️ §2. Zasady kanałów głosowych</h3>
+<ol>
+<li>Zabrania się celowego krzyczenia, piszczenia oraz generowania nieprzyjemnych lub bardzo głośnych dźwięków przez mikrofon.</li>
+<li>Zabrania się puszczania bindów, soundboardów oraz innych dźwięków mających na celu przeszkadzanie innym użytkownikom.</li>
+<li>Zabrania się celowego przemieszczania się („skakania”) pomiędzy kanałami głosowymi w celu utrudniania korzystania z serwera innym użytkownikom.</li>
+<li>Zabrania się streamowania treści obraźliwych, pornograficznych, drastycznych lub niezgodnych z zasadami serwera.</li>
+<li>Zabrania się kierowania przekleństw, wyzwisk oraz obraźliwych treści bezpośrednio w stronę innych użytkowników.</li>
+</ol>
+<h3>⚠️ §3. Postanowienia końcowe</h3>
+<ol>
+<li>Administracja ma prawo reagować na zachowania szkodliwe dla społeczności, nawet jeśli nie zostały one dosłownie wymienione w regulaminie.</li>
+<li>Każdy użytkownik jest zobowiązany do przestrzegania zasad oraz stosowania się do poleceń administracji.</li>
+<li>Próby omijania kar, wykorzystywania luk w regulaminie lub celowego obchodzenia jego zasad mogą skutkować dodatkową karą.</li>
+<li>Wszelkie decyzje administracji dotyczące kar mogą zostać poddane ponownej weryfikacji po zgłoszeniu sprawy odpowiedniej osobie z administracji.</li>
+</ol>
+<p><strong>🔔 Pamiętaj!</strong><br>Szanuj innych użytkowników, zachowuj kulturę i nie utrudniaj innym korzystania z serwera.</p>
+<p><strong>Miłego pobytu na serwerze Discord FunkMC! ❤️</strong></p>
+</div>
+</section>
 <footer>
 
 <a href="https://discord.gg/67CufwTSpX" target="_blank">
+
 <i class="fab fa-discord"></i>
+
 </a>
 
 <a href="https://youtube.com/@pozdro_yt?si=mqkqtXgp1AH8Adyj" target="_blank">
+
 <i class="fab fa-youtube"></i>
+
 </a>
 
 <a href="https://www.tiktok.com/@pozdro_yt5?is_from_webapp=1&sender_device=pc" target="_blank">
+
 <i class="fab fa-tiktok"></i>
+
 </a>
 
 </footer>
@@ -402,35 +607,53 @@ particlesJS("particles-js",{
 particles:{
 
 number:{
+
 value:90
+
 },
 
 color:{
+
 value:"#b100ff"
+
 },
 
 shape:{
+
 type:"circle"
+
 },
 
 opacity:{
+
 value:0.5
+
 },
 
 size:{
+
 value:3
+
 },
 
 move:{
+
 enable:true,
+
 speed:2
+
 },
 
 line_linked:{
+
 enable:true,
+
 distance:150,
+
 color:"#8d00ff",
+
 opacity:0.3
+
 }
 
 }
@@ -438,12 +661,15 @@ opacity:0.3
 });
 
 fetch("https://discord.com/api/guilds/1365079416965415022/widget.json")
+
 .then(res=>res.json())
+
 .then(data=>{
 
 document.getElementById("members").innerHTML=data.presence_count+" Online";
 
 })
+
 .catch(()=>{
 
 document.getElementById("members").innerHTML="Niedostępne";
@@ -453,4 +679,5 @@ document.getElementById("members").innerHTML="Niedostępne";
 </script>
 
 </body>
+
 </html>
